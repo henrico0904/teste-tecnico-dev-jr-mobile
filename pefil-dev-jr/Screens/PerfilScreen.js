@@ -16,9 +16,8 @@ export default function PerfilScreen() {
       <View style={styles.ImagemFoto}>
         <Image
           style={styles.imagemPerfil}
-          source={{
-            uri: "https://avatars.githubusercontent.com/u/197296498?v=4",
-          }}
+          // CORREÇÃO AQUI: Usando require() para arquivos locais
+          source={require("../assets/unnamed.png")}
         />
         <Text style={styles.nomePerfil}>Henrico Ferrari Ferreira</Text>
         <Text style={styles.descricaoPerfil}>
@@ -31,7 +30,6 @@ export default function PerfilScreen() {
         <Text style={styles.textoCorpo}>
         Estudante de desenvolvimento de sistemas no Senai Valinhos e 3ºano do Ensino Médio no Sesi. Sempre busco a aprender mais, não somente na área de programação, mas em todos os ambitos profissionais e pessoais.
         </Text>
-
 
         <View style={styles.contato}>
           <Text style={styles.tituloContato}>Entre em contato</Text>

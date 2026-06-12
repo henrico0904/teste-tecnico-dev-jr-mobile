@@ -26,8 +26,8 @@ export default function App() {
 
                     },
 
-                    tabBarActiveTintColor: '#3B82F6',
-                    tabBarInactiveTintColor: '#999',
+                    tabBarActiveTintColor: "#f85538",
+                    tabBarInactiveTintColor: '#ffffff86',
                 }}>
                 <Tab.Screen
                     name="Perfil"
@@ -51,7 +51,7 @@ export default function App() {
 
                 <Tab.Screen
                     name="Habilidades"
-                    component={HabilidadesScreens}
+                    component={HabilidadesScreen}
                     options={{
                         tabBarIcon: ({ color, size }) => (
                             <Ionicons name="code-slash" size={size} color={color} />
